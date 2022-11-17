@@ -262,7 +262,12 @@ lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
 ans: print(lst[4][2])
 Q38. Take a list as an input from the user and find the length of the list.
 ans: 
-lst = input("Enter the element")
+
+lst=[]
+len=int(input("enter the length of list"))
+for i in range(len):
+    element = int(input("Enter the element: "))
+    lst.append(element)    
 length_lst=len(lst) #length of element store in length_lst
 print(length_lst)
 
