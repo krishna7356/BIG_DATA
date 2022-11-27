@@ -1,5 +1,5 @@
 ## Python OOP Assignment
-Q1. What is the purpose of Pythons OOP?
+Q1. What is the purpose of Python's OOP?
 ans:Python is also an object-oriented language since its beginning. It allows us to develop applications using an Object-Oriented approach. In Python, we can easily create and use classes and objects.An object-oriented paradigm is to design the program using classes and objects. The object is related to real-word entities such as book, house, pencil, etc. The oops concept focuses on writing the reusable code. It is a widespread technique to solve the problem by creating objects.Major principles of object-oriented programming system are Class,Object,Method,Inheritance,Polymorphism,Data abstraction,Encapsulation.
 
 Q2. Where does an inheritance search look for an attribute?
@@ -16,10 +16,10 @@ An object consists of :
 Instance object :
 Instance variables are for data, unique to each instance and class variables are for attributes and methods shared by all instances of the class. Instance variables are variables whose value is assigned inside a constructor or method with self whereas class variables are variables whose value is assigned in the class.
 
-
-Q4. What makes the first argument in a class’s method function special?
+Q4. What makes the first argument in a class’s method function special?
 ans: The self parameter is a reference to the current instance of the class, and is used to access variables that belongs to the class.It's the frist argument in the class method.
-Q5. What is the purpose of the __init__ method?
+
+Q5. What is the purpose of the init method?
 ans: The Default __init__ Constructor in C++ and Java. Constructors are used to initializing the object’s state. The task of constructors is to initialize(assign values) to the data members of the class when an object of the class is created. Like methods, a constructor also contains a collection of statements(i.e. instructions) that are executed at the time of Object creation. It is run as soon as an object of a class is instantiated. The method is useful to do any initialization you want to do with your object.
 
 Q6. What is the process for creating a class instance?
@@ -84,14 +84,14 @@ class Test:
     def __init__(self):
         self.x = 20
 print(Test.x)  # 10
+
 Q12. Where and how are instance attributes created?
 ans: Instances are unique objects made in accordance with the class,instance attributes are created inside the class.
-
-Q13. What does the term self in a Python class mean?
+Q13. What does the term "self" in a Python class mean?
 ans:self represents the instance of the class. By using the “self” keyword we can access the attributes and methods of the class in python. It binds the attributes with the given arguments.
-
 Q14. How does a Python class handle operator overloading?
 ans: Python operators work for built-in classes. But the same operator behaves differently with different types. For example, the + operator will perform arithmetic addition on two numbers, merge two lists, or concatenate two strings
+
 Q15. When do you consider allowing operator overloading of your classes?
 ans: Operator overloading is helpful in cases where the operators used for certain types provide semantics related to the domain context and syntactic support as found in the programming language. It is used for syntactical convenience, readability and maintainability.
 
@@ -105,7 +105,9 @@ ans:
 *Library :A library is a set of functions / classes focusing on some problem domain.Libraries do not control the flow of program. Functions of libraries are called by the main program with some input and they return some output or provide some behavior.
 *API : APIs can be thought of as a library of functions exposed over a network e.g., continuing earlier example, if there is a decision to expose the Data Access APIs as REST APIs.framework must handle exception in all the places where it is invoking methods on its plug-in.Framework itself cannot be the reason for a crash so it must also make sure that it internally doesn't allow any exception to go unhandled and reach the runtime because that may result in a crash.
 *UI Application :Almost all UI applications are written using some framework with the framework calling the application when there is some event. This makes the event handlers an entry point in to the application so exceptions should be caught on event handlers.
+
 Q19. What happens if you don't do something extra to treat an exception?
+ans:If you do nothing, the exception causes your application to crash. Or you can choose to handle the exception. That is, you acknowledge that the problem happened, prevent the application from crashing, and take the steps necessaries in order to either recover from the error or fail gracefully.
 
 Q20. What are your options for recovering from an exception in your script?
 ans:try/except: catch the error and recover from exceptions hoist by programmers or Python itself.
@@ -113,8 +115,7 @@ ans:try/except: catch the error and recover from exceptions hoist by programmers
 Q21. Describe two methods for triggering exceptions in your script.
 ans: Common triggering exceptions ZeroDivisionError,NameError,IndentationError
 
-Q22. Identify two methods for specifying actions to be executed at termination time, regardless of
-whether or not an exception exists.
+Q22. Identify two methods for specifying actions to be executed at termination time, regardless of  whether or not an exception exists.
 ans: The process termination mechanism in Python is implemented by throwing a SystemExit exception.Terminate a Program Using the quit() Function The quit()function is an inbuilt function
 
 Q23. What is the purpose of the try statement?
@@ -140,11 +141,11 @@ finally block is always executed after leaving the try statement. In case if som
 Q25. What is the purpose of the raise statement?
 ans:Introduction to the Python raise statement To raise an exception, you use the raise statement: raise ExceptionType ().
 
-Q26. What does the assert statement do, and what other statement is it like?
+Q26. What does the assert statement do, and what other statement is it like?
 ans: The assert Statements in Python The assert statement checks if a condition evaluates True. If it does, the program keeps running. If it does not, the program returns an AssertionError and the program stops executing.
 assert is also act like if statement ,if it's True program run.
 
-Q27. What is the purpose of the with/as argument, and what other statement is it like?
+Q27. What is the purpose of the with/as argument, and what other statement is it like?
 ans: with statement is used in exception handling to make the code cleaner and much more readable.as means it used for aliasing the name.
 eg: # using with statement
 with open('file_path', 'w') as file:
@@ -193,7 +194,8 @@ print(emp.getName(), emp.isEmployee())
 emp = Employee("manohar") # An Object of Employee
 print(emp.getName(), emp.isEmployee())
 
-Q32. Suppose class C inherits from classes A and B as class C(A,B).Classes A and B both have their own versions of method func(). If we call func() from an object of class C, which version gets invoked?
+Q32. Suppose class C inherits from classes A and B as class C(A,B).Classes A and B both have their own versions of method func(). If we call func() from an object of 
+class C, which version gets invoked?
 ans: class A version func() is invoke.
 
 Q33. Which methods/functions do we use to determine the type of instance and inheritance?
